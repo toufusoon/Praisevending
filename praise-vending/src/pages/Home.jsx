@@ -98,6 +98,16 @@ export default function Home() {
       setPraises(data);
     });
     
+    // Attempt BGM Autoplay
+    const audio = document.getElementById('bgm-audio');
+    if (audio) {
+      audio.play().then(() => {
+        setIsPlaying(true);
+      }).catch((err) => {
+        console.warn("Autoplay was prevented by the browser. Waiting for user interaction.", err);
+      });
+    }
+
     return () => {
       unsubscribeAuth();
       unsubscribeDb();
@@ -556,7 +566,7 @@ export default function Home() {
         )}
       </AnimatePresence>
 
-      <audio id="bgm-audio" loop>
+      <audio id="bgm-audio" loop autoPlay>
         <source src="/bgm.mp3" type="audio/mpeg" />
       </audio>
     </div>
