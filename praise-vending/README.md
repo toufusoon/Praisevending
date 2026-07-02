@@ -1,16 +1,139 @@
-# React + Vite
+# 🍬 미담자판기 (Praise Vending)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> "우리 반, 이렇게나 미담이 많네!"
+> 
+> 동전이 아니라 **우리 반 미담**이 쌓이는 자판기.
+> 서로의 좋은 모습을 발견하고 나누는 학급용 웹앱.
 
-Currently, two official plugins are available:
+🔗 **[미담자판기 바로가기](https://praisevending.vercel.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<br>
 
-## React Compiler
+## 💡 이 앱을 만든 이유
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+저학년 담임을 맡으면서, 아이들이 서로의 실수나 잘못을 **고자질**하는 모습을 자주 보았습니다.
 
-## Expanding the Oxlint configuration
+그때마다 생각했습니다.
+> *"친구의 잘못을 찾아내는 눈만큼, 좋은 모습을 발견하는 눈도 함께 자랐으면 좋겠다."*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+그래서 만들었습니다.  
+**서로의 좋은 면과 노력하는 모습을 알아주고 감사하는 학급 문화**를 위한 작은 도구.
+
+말랑말랑하고 둥글둥글한 우리 반을 위한 앱, **미담자판기**입니다.
+
+<br>
+
+## ✨ 학생용 기능
+
+### 🎁 자판기 감성 UI
+- 자판기를 열듯 미담을 뽑아보는 재미있는 인터페이스
+- 배경음악으로 감성 UP! 아이들이 놀이처럼 즐기도록 설계
+- **동전 투입구에는 잔액 대신 우리 반 미담 개수가 표시** — 함께 쌓아가는 재미
+
+### 📝 미담 등록
+- 친구의 좋은 점, 노력하는 모습을 자유롭게 기록
+- "누가 어떤 미담을 했는지" 함께 남기기
+
+### 👍 공감하기
+- 다른 친구가 발견한 미담에 공감 표시
+- 함께 기뻐하고 축하하는 문화 만들기
+
+### 🎲 랜덤 미담 뽑기
+- 아침 시간이나 종례 시간에 랜덤으로 미담 한 편 뽑기
+- 하루의 시작과 끝을 따뜻하게 만드는 작은 의식
+
+### 🔍 검색 & 정렬
+- 미담이 많이 쌓여도 원하는 이야기를 쉽게 찾을 수 있도록 **검색 기능** 제공
+- 최신순·공감순 등 다양한 **정렬 옵션**으로 미담 살펴보기
+
+### 🏆 우리 반 미담 리더보드
+- **미담이 많은 친구** — 칭찬받은 횟수 TOP
+- **미담을 많이 발견한 친구** — 친구의 좋은 점을 잘 찾아내는 관찰력
+- **공감을 많이 받은 미담** — 우리 반이 특히 좋아한 이야기
+
+### 🎉 학급 목표 이벤트
+- 우리 반 전체 미담 개수 목표 설정
+- 목표 달성 시 학급 이벤트로 함께 축하
+
+<br>
+
+## 👩‍🏫 교사용 관리 기능
+
+저학년 교실에서 안전하게 운영하기 위해, **교사 전용 관리 페이지**를 함께 설계했습니다.
+
+### 🔐 학생 계정 관리 (사칭 방지)
+- 학생 이름과 비밀번호를 **교사가 미리 등록**해서 나눠주는 방식
+- 자유 가입이 아니므로 **다른 친구를 사칭하는 일 방지**
+- 전학·반편성 변경 시 **등록 학생 정보 수정·추가·삭제** 가능
+
+### ✅ 미담 승인제 (도배·비방 차단)
+- 학생들이 올린 미담은 **교사 승인 후에만** 자판기에 노출
+- **미담인 척 친구를 비방하는 글, 장난성 도배글** 사전 차단
+- 부적절한 내용은 교사가 바로 **삭제** 가능
+
+### 🛡️ 저학년도 안심하고 사용할 수 있는 이유
+> "따뜻한 취지가 훼손되지 않도록, 안전장치를 앱 안에 함께 담았습니다."
+
+- **사칭 방지** — 교사가 발급한 계정으로만 로그인
+- **비방 차단** — 승인 전에는 아무에게도 보이지 않음
+- **도배 방지** — 교사가 확인 후 노출 여부 결정
+- 선생님이 학급 분위기에 맞게 유연하게 조절 가능
+
+<br>
+
+## 🎯 기대 효과
+
+- 서로의 **긍정적인 면**을 발견하는 습관 형성
+- 고자질 대신 **감사와 인정**의 언어 사용
+- 학급 전체가 함께 만드는 **따뜻한 소속감**
+- 아이들 스스로 **좋은 반 분위기**를 만들어가는 주체가 되기
+
+<br>
+
+## 🧭 이렇게 사용해보세요 (선생님 가이드)
+
+1. **학생 계정 만들기** — 교사 페이지에서 우리 반 학생 이름·비밀번호를 등록합니다.
+2. **아이들에게 안내** — 학생들에게 계정 정보를 나눠주고, 자판기 사용법을 소개합니다.
+3. **미담 등록 유도** — "친구의 좋은 점을 발견하면 자판기에 넣어주자!" 하고 격려합니다.
+4. **승인하기** — 하루 한 번, 등록된 미담을 확인하고 승인합니다.
+5. **아침 열기** — 아침 시간에 랜덤 뽑기로 하루를 따뜻하게 시작합니다.
+6. **함께 축하하기** — 리더보드를 살펴보고, 목표 달성 시 학급 이벤트로 축하합니다.
+
+<br>
+
+## 📸 화면 미리보기
+
+> *스크린샷 추가 예정*
+
+<br>
+
+## 🛠️ 기술 스택
+
+- **Frontend**: React + Vite
+- **Backend / DB**: Firebase
+- **Deployment**: Vercel
+
+<br>
+
+## 🚀 로컬 실행 방법
+
+```bash
+# 저장소 클론
+git clone https://github.com/toufusoon/Praisevending.git
+cd praise-vending
+
+# 패키지 설치
+npm install
+
+# 환경변수 설정
+# 프로젝트 루트에 .env.local 파일을 만들고 아래 Firebase 값을 채워주세요.
+# VITE_FIREBASE_API_KEY=...
+# VITE_FIREBASE_AUTH_DOMAIN=...
+# VITE_FIREBASE_PROJECT_ID=...
+# VITE_FIREBASE_STORAGE_BUCKET=...
+# VITE_FIREBASE_MESSAGING_SENDER_ID=...
+# VITE_FIREBASE_APP_ID=...
+
+# 개발 서버 실행
+npm run dev
+
